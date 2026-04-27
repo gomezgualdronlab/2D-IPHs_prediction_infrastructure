@@ -1,0 +1,38 @@
+paths:
+  results_dir: "results"
+  hpo_dir: "results/hpo"
+
+data:
+  train_csv: "data/processed/ml_ready_training.csv"
+  validation_csv: "data/processed/ml_ready_validation.csv"
+  test_csv: "data/processed/ml_ready_test.csv"
+
+features:
+  name: "unset"
+  include_textural: true
+  include_histogram: true
+  include_ads: true
+
+model:
+  hidden_units: [512, 256, 128]
+  dropout: 0.1
+  activation: "relu"
+  l2: 1.0e-5
+  optimizer: "adam"
+  learning_rate: 0.001
+  loss: "mse"
+
+training:
+  seed: 42
+  batch_size: 512
+  epochs: 150
+  early_stopping_patience: 20
+  evaluate_test: true
+  verbose: 1
+
+hpo:
+  algorithm: "bayesian"
+  objective: "val_mae"
+  max_trials: 10
+  executions_per_trial: 1
+

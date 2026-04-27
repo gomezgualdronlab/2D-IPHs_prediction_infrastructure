@@ -1,0 +1,6 @@
+features:
+  name: "model_all"
+  include_textural: true
+  include_histogram: true
+  include_ads: true
+
