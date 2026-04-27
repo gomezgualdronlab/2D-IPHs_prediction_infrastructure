@@ -1,0 +1,34 @@
+paths:
+  results_dir: results_full_thorough
+  hpo_dir: results_full_thorough/hpo
+data:
+  train_csv: data/processed/ml_ready_training.csv
+  validation_csv: data/processed/ml_ready_validation.csv
+  test_csv: data/processed/ml_ready_test.csv
+features:
+  name: unset
+  include_textural: true
+  include_ads: true
+model:
+  hidden_units:
+  - 512
+  - 256
+  - 128
+  dropout: 0.1
+  activation: relu
+  l2: 1.0e-05
+  optimizer: adam
+  learning_rate: 0.001
+  loss: mse
+training:
+  seed: 42
+  batch_size: 512
+  epochs: 300
+  early_stopping_patience: 24
+  verbose: 1
+  evaluate_test: true
+hpo:
+  algorithm: bayesian
+  objective: val_mae
+  max_trials: 10
+  executions_per_trial: 1

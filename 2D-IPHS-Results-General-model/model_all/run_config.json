@@ -1,0 +1,43 @@
+{
+  "paths": {
+    "results_dir": "results_pipeline_eval",
+    "hpo_dir": "results_pipeline_eval/hpo"
+  },
+  "data": {
+    "train_csv": "data/processed/ml_ready_training.csv",
+    "validation_csv": "data/processed/ml_ready_validation.csv",
+    "test_csv": "data/processed/ml_ready_test.csv"
+  },
+  "features": {
+    "name": "model_all",
+    "include_textural": true,
+    "include_ads": true,
+    "include_histogram": true
+  },
+  "model": {
+    "hidden_units": [
+      256,
+      128
+    ],
+    "dropout": 0.3,
+    "activation": "relu",
+    "l2": 1e-05,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "loss": "mse"
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 256,
+    "epochs": 100,
+    "early_stopping_patience": 10,
+    "verbose": 1,
+    "evaluate_test": true
+  },
+  "hpo": {
+    "algorithm": "bayesian",
+    "objective": "val_mae",
+    "max_trials": 20,
+    "executions_per_trial": 1
+  }
+}
