@@ -35,7 +35,7 @@ This repository provides all scripts and input files needed to:
 3. Train convolutional neural network (CNN) and gradient-boosted tree (GBT) models on 2D-IPHs to predict adsorption properties.
 4. Reproduce the general model and the gas/adsorbent-specific (SFS, scratch) models reported in the publication.
 
-To generate the 2D-IPHs please check teh repository: [2D-IPHs Builder](https://github.com/JFajardoRojas/2D-IPHs_builder)
+To generate the 2D-IPHs please check the *GitHub repository*: [2D-IPHs Builder](https://github.com/JFajardoRojas/2D-IPHs_builder)
 
 **Key result:** 2D-IPHs is a simple and scalable representation for ML-based adsorption-related properties prediction, enabling screening of millions of MOF structures without molecular simulations.
 
