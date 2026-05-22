@@ -1,0 +1,29 @@
+SimulationType                  MonteCarlo
+NumberOfCycles                  5000
+NumberOfInitializationCycles    1000
+PrintEvery                      100
+RestartFile                     no
+
+Forcefield                      GenericMOFs_corrected
+CutOff                          12.8
+ChargeMethod                    Ewald
+EwaldPrecision                  1e-6
+UseChargesFromCIFfile           yes
+
+
+Framework                       0
+FrameworkName                   ####Name of the MOF in RASPA folder Structures/cif
+Inputfiletype                   cif
+UnitCells                       #### X Y Z  Repetition in each unitcell directions (Computed to match cutoff)
+ExternalTemperature             298
+ExternalPressure                1e+7
+
+Component 0 MoleculeName                methane
+            MoleculeDefinition          TraPPE
+            FugacityCoefficient         1.0
+            IdealGasRosenbluthWeight    1.0
+            TranslationProbability      1.0
+            RotationProbability         1.0
+            ReinsertionProbability      1.0
+            SwapProbability             1.0
+            CreateNumberOfMolecules     0
