@@ -1,0 +1,28 @@
+{
+  "model_name": "propane_sfs",
+  "molecule": "propane",
+  "pipeline": "sfs",
+  "general_model_dir": "../general",
+  "artifact_paths": {
+    "keras_model": "best_model_hpo.keras",
+    "preprocessor": "preprocessor.joblib"
+  },
+  "prediction_column": "prediction_loading",
+  "feature_policy": {},
+  "features_after_drop": [],
+  "training": {
+    "train_fraction": 1.0,
+    "best_hyperparameters": {
+      "num_hidden_layers": 2,
+      "units_0": 320,
+      "dropout_0": 0.2,
+      "learning_rate": 0.0006938949930630214,
+      "units_1": 448,
+      "dropout_1": 0.1,
+      "units_2": 448,
+      "dropout_2": 0.1,
+      "units_3": 320,
+      "dropout_3": 0.0
+    }
+  }
+}

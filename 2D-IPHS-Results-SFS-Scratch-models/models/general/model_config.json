@@ -1,0 +1,14 @@
+{
+  "model_name": "model_all",
+  "features": {
+    "include_textural": true,
+    "include_ads": true,
+    "include_histogram": true
+  },
+  "artifact_paths": {
+    "keras_model": "best_model_hpo.keras",
+    "preprocessor": "preprocessor.joblib"
+  },
+  "prediction_column": "prediction_loading",
+  "notes": "Bundled inference package; paths in artifact_paths are relative to this model/ directory."
+}

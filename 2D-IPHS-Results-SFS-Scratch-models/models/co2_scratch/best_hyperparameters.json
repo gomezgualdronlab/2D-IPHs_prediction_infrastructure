@@ -1,0 +1,12 @@
+{
+  "num_hidden_layers": 2,
+  "units_0": 320,
+  "dropout_0": 0.0,
+  "learning_rate": 0.004317224600877307,
+  "units_1": 64,
+  "dropout_1": 0.0,
+  "units_2": 192,
+  "dropout_2": 0.0,
+  "units_3": 512,
+  "dropout_3": 0.2
+}

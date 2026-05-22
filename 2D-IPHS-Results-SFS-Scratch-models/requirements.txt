@@ -1,0 +1,5 @@
+tensorflow>=2.15,<2.16
+numpy
+pandas
+scikit-learn>=1.5,<1.6
+joblib

@@ -1,0 +1,24 @@
+{
+  "validation": {
+    "rmse": 0.9019178152084351,
+    "mae": 0.45582833886146545,
+    "r2": 0.9985052943229675
+  },
+  "test": {
+    "rmse": 1.3220758438110352,
+    "mae": 0.8322322368621826,
+    "r2": 0.9940281510353088
+  },
+  "hpo": {
+    "objective": "val_mae",
+    "max_trials": 40,
+    "num_initial_points": 10,
+    "best_trial_id": 10,
+    "best_val_mae": 0.45582833886146545
+  },
+  "training": {
+    "train_fraction": 1.0,
+    "original_train_rows": 12353,
+    "sampled_train_rows": 12353
+  }
+}
