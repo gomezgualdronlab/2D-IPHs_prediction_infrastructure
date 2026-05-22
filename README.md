@@ -121,37 +121,8 @@ For **RASPA2** installation, follow the official guide at https://github.com/iRA
 ---
 
 ## Usage
-### 1. Training and Running ML Models
 
-Three families of ML models are provided, corresponding to the main results sections of the paper.
-
-#### General Model (multi-gas, multi-MOF dataset)
-
-```bash
-cd 2D-IPHS-Results-General-model/
-python 2D-IPHS-General-model.py \
-    --representation_dir ../representations/ \
-    --labels_file ../data/adsorption_labels.csv \
-    --model cnn \
-    --output_dir ./results/
-```
-
-#### Henry's Law Models
-
-```bash
-cd 2D-IPHS-Results-KH-models/
-python train_KH_model.py --probe CO2 --model gbt
-```
-
-#### SFS and Scratch Models (gas/adsorbent-specific)
-
-```bash
-cd 2D-IPHS-Results-SFS-Scratch-models/
-python train_sfs_model.py --probe CH4 --mode sfs
-python train_sfs_model.py --probe CH4 --mode scratch
-```
-
-`--mode sfs` uses sequential forward selection of training MOFs; `--mode scratch` trains from scratch on the target gas/MOF family.
+Individual README.txt files included in each drectory for usage instructions.
 
 ---
 
