@@ -272,7 +272,7 @@ Parameters:
 
 ---
 
-## other_files
+## other_files | This file can be found in the OSF repository https://osf.io/vu3hn/overview (Due to size constraints)
 other_files contains the following:
 - matched_MOFs.csv: a file containing the flattened histograms for all 39,950 MOFs considered in the analysis
 - matched_targets.csv: a file containing the Henry's constant targets for each histogram
